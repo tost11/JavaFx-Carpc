@@ -15,5 +15,12 @@ Java open-jdk 11
 java-mpd
 json-simple
 
+## Hardware
+- Raspberrypi 3 or 4, (maby 2 never tested)
+- Raspberrypi 7-Inch Touch Screen Display
+- StromPi for 12V power Supply (or whaterver you whant to use)
+- RTL2832 USB dongle (or whatever welle.io and your county supports)
+- GPS USB dongle (or whatever gpsd supports)
+
 ## How to use
 TODO
