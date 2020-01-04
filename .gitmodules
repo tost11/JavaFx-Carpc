@@ -1,0 +1,6 @@
+[submodule "json-simple"]
+	path = json-simple
+	url = https://github.com/fangyidong/json-simple.git
+[submodule "java-mpd"]
+	path = java-mpd
+	url = https://github.com/tost11/java-mpd.git
