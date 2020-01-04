@@ -12,8 +12,8 @@ Java open-jdk 11
 - Updates Musik via owncloudcmd
 
 ## Dependencies
-java-mpd
-json-simple
+- java-mpd
+- json-simple
 
 ## Hardware
 - Raspberrypi 3 or 4, (maby 2 never tested)
