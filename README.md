@@ -58,3 +58,4 @@ There is a config file for dis/enableing Features and set up needet Folders and 
 - gps_upload_keystore (string) -> keystore with with private key
 - gps_upload_keystore_pw (string) -> first password for keystore
 - gps_upload_keystore_pw_2 (string) -> second password for keystore
+-> enabled_radio (boolean) -> enables radio feature
