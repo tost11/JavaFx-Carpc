@@ -1,0 +1,1309 @@
+{
+  "cir": [
+    {
+      "index": 712,
+      "value": 8.39717960357666
+    },
+    {
+      "index": 911,
+      "value": 0.8724597692489624
+    },
+    {
+      "index": 947,
+      "value": 0.4591236114501953
+    },
+    {
+      "index": 930,
+      "value": 0.22388729453086853
+    },
+    {
+      "index": 728,
+      "value": -0.5764973759651184
+    },
+    {
+      "index": 1044,
+      "value": -3.250790596008301
+    }
+  ],
+  "demodulator": {
+    "fic": {
+      "numcrcerrors": 310
+    },
+    "frequencycorrection": -8009,
+    "snr": 9
+  },
+  "ensemble": {
+    "ecc": "0xe0",
+    "fig2charset": "Undefined",
+    "fig2label": "",
+    "fig2rfu": false,
+    "id": "0x10bc",
+    "label": "DR Deutschland  ",
+    "shortlabel": "DR"
+  },
+  "messages": [],
+  "receiver": {
+    "hardware": {
+      "gain": 38.599998474121094,
+      "name": "Realtek, RTL2838UHIDIR, 00000001"
+    },
+    "software": {
+      "coarsecorrectorenabled": true,
+      "fftwindowplacement": "ThresholdBeforePeak",
+      "freqsyncmethod": "PatternOfZeros",
+      "lastchannelchange": 1577470714,
+      "name": "weLe.io",
+      "version": "v2.1-0-g8fc5739"
+    }
+  },
+  "services": [
+    {
+      "audiolevel": {
+        "left": 8270,
+        "right": 8654,
+        "time": 1577470728
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 64,
+            "cu": 42,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 2-B",
+            "sad": 252,
+            "subchid": 7
+          },
+          "transportmode": "audio"
+        }
+      ],
+      "dls": {
+        "label": "Sade - No Ordinary Love",
+        "lastchange": 0,
+        "time": 1577470720
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 0,
+        "time": 1577470720
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "Schwarzwaldradio",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 64 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 0,
+      "ptystring": "",
+      "samplerate": 48000,
+      "shortlabel": "Schwarzw",
+      "sid": "0x100d",
+      "url_mp3": "/mp3/0x100d",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 14867,
+        "right": 11558,
+        "time": 1577470738
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 72,
+            "cu": 54,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 108,
+            "subchid": 4
+          },
+          "transportmode": "audio"
+        }
+      ],
+      "dls": {
+        "label": "Robin Schulz feat Harloe - All This Love ",
+        "lastchange": 0,
+        "time": 1577470734
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 0,
+        "time": 1577470734
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "ENERGY          ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 72 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 10,
+      "ptystring": "Pop Music",
+      "samplerate": 48000,
+      "shortlabel": "ENERGY",
+      "sid": "0x1a45",
+      "url_mp3": "/mp3/0x1a45",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 9399,
+        "right": 10298,
+        "time": 1577470748
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 64,
+            "cu": 42,
+            "language": 8,
+            "languagestring": "German",
+            "protection": "EEP 2-B",
+            "sad": 294,
+            "subchid": 20
+          },
+          "transportmode": "audio"
+        }
+      ],
+      "dls": {
+        "label": "Rainhard Fendrich - Schickeria",
+        "lastchange": 0,
+        "time": 1577470739
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 4,
+        "time": 1577470739
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "SCHLAGERPARADIES",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 64 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 26,
+      "ptystring": "National Music",
+      "samplerate": 48000,
+      "shortlabel": "SCHLAGER",
+      "sid": "0x10c3",
+      "url_mp3": "/mp3/0x10c3",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 3309,
+        "right": 4551,
+        "time": 1577470758
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 72,
+            "cu": 54,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 54,
+            "subchid": 3
+          },
+          "transportmode": "audio"
+        }
+      ],
+      "dls": {
+        "label": "HEAVY ON MY HEART - ANASTACIA",
+        "lastchange": 0,
+        "time": 1577470751
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 3,
+        "time": 1577470751
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "Absolut relax   ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 72 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 10,
+      "ptystring": "Pop Music",
+      "samplerate": 48000,
+      "shortlabel": "A relax",
+      "sid": "0x17fa",
+      "url_mp3": "/mp3/0x17fa",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 10875,
+        "right": 10828,
+        "time": 1577470768
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 72,
+            "cu": 54,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 390,
+            "subchid": 22
+          },
+          "transportmode": "audio"
+        }
+      ],
+      "dls": {
+        "label": "Kid Rock - All Summer Long",
+        "lastchange": 0,
+        "time": 1577470760
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 2,
+        "time": 1577470760
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "RADIO BOB!      ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 72 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 11,
+      "ptystring": "Rock Music",
+      "samplerate": 48000,
+      "shortlabel": "BOB!",
+      "sid": "0x15dd",
+      "url_mp3": "/mp3/0x15dd",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 8230,
+        "right": 6986,
+        "time": 1577470778
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 72,
+            "cu": 54,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 198,
+            "subchid": 6
+          },
+          "transportmode": "audio"
+        }
+      ],
+      "dls": {
+        "label": "Agnus Dei: Dona nobis pacem (Messe h-moll BWV232) Johann Sebastian Bach",
+        "lastchange": 0,
+        "time": 1577470772
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 1,
+        "time": 1577470772
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "KLASSIK RADIO   ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 72 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 13,
+      "ptystring": "Light classical",
+      "samplerate": 48000,
+      "shortlabel": "KLASSIK",
+      "sid": "0xd75b",
+      "url_mp3": "/mp3/0xd75b",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 6237,
+        "right": 4524,
+        "time": 1577470788
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 72,
+            "cu": 54,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 336,
+            "subchid": 21
+          },
+          "transportmode": "audio"
+        }
+      ],
+      "dls": {
+        "label": "Steve & Grille mit Sunshine Live Mix Mission 2019/20 auf sunshine live // electronic music radio - digital",
+        "lastchange": 0,
+        "time": 1577470783
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 4,
+        "time": 1577470783
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "sunshine live   ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 72 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 10,
+      "ptystring": "Pop Music",
+      "samplerate": 48000,
+      "shortlabel": "sunshine",
+      "sid": "0x15dc",
+      "url_mp3": "/mp3/0x15dc",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 4994,
+        "right": 4357,
+        "time": 1577470798
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 48,
+            "cu": 36,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 162,
+            "subchid": 5
+          },
+          "transportmode": "audio"
+        }
+      ],
+      "dls": {
+        "label": "Freudenreicher Rosenkranz. - Gebetsgruppe aus, Traunstein",
+        "lastchange": 0,
+        "time": 1577470791
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 3,
+        "time": 1577470791
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "Radio Horeb     ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 48 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 20,
+      "ptystring": "Religion",
+      "samplerate": 48000,
+      "shortlabel": "Horeb",
+      "sid": "0xd01c",
+      "url_mp3": "/mp3/0xd01c",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 2578,
+        "right": 3317,
+        "time": 1577470808
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 72,
+            "cu": 54,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 0,
+            "subchid": 2
+          },
+          "transportmode": "audio"
+        }
+      ],
+      "dls": {
+        "label": "Welch Kindlein liegt in der Jungfrau Schoß -- Auswahlchor",
+        "lastchange": 0,
+        "time": 1577470803
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 5,
+        "rserrors": 6,
+        "time": 1577470803
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "ERF Plus        ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 72 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 20,
+      "ptystring": "Religion",
+      "samplerate": 48000,
+      "shortlabel": "ERF",
+      "sid": "0x1a64",
+      "url_mp3": "/mp3/0x1a64",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": -1,
+        "right": -1,
+        "time": 0
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": null,
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "DRadio Daten    ",
+          "primary": true,
+          "scid": 1,
+          "shortlabel": "DRadioD",
+          "subchannel": {
+            "bitrate": 32,
+            "cu": 24,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 836,
+            "subchid": 14
+          },
+          "transportmode": "packetdata"
+        },
+        {
+          "ascty": null,
+          "caflag": false,
+          "componentnr": 1,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "DRadio BWS      ",
+          "primary": false,
+          "scid": 2,
+          "shortlabel": "DBWS",
+          "subchannel": {
+            "bitrate": 0,
+            "cu": 0,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 0,
+            "subchid": -1
+          },
+          "transportmode": "packetdata"
+        }
+      ],
+      "dls": {
+        "label": "",
+        "lastchange": 0,
+        "time": 0
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 0,
+        "time": 0
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "DRadio Daten    ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 0,
+      "ptystring": "",
+      "samplerate": 0,
+      "shortlabel": "DDaten",
+      "sid": "0xe0d00250",
+      "url_mp3": null,
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 1303,
+        "right": 2192,
+        "time": 1577470818
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "Dlf             ",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "Dlf",
+          "subchannel": {
+            "bitrate": 104,
+            "cu": 104,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 2-A",
+            "sad": 480,
+            "subchid": 10
+          },
+          "transportmode": "audio"
+        },
+        {
+          "ascty": null,
+          "caflag": false,
+          "componentnr": 1,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "DlfTXT          ",
+          "primary": false,
+          "scid": 1,
+          "shortlabel": "DlfTXT",
+          "subchannel": {
+            "bitrate": 0,
+            "cu": 0,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 0,
+            "subchid": -1
+          },
+          "transportmode": "packetdata"
+        }
+      ],
+      "dls": {
+        "label": "Hopp oder Top? Chancen und Risiken der Exzellenzstrategie für die Unis, Christian Floto",
+        "lastchange": 1577470815,
+        "time": 1577470810
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 1,
+        "time": 1577470810
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "Dlf             ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 104 kBit/s",
+      "mot": {
+        "lastchange": 1577470815,
+        "time": 1577470815
+      },
+      "pty": 3,
+      "ptystring": "Information",
+      "samplerate": 48000,
+      "shortlabel": "Dlf",
+      "sid": "0xd210",
+      "url_mp3": "/mp3/0xd210",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 9381,
+        "right": 9607,
+        "time": 1577470828
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "Dlf Kultur      ",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "Dlf Kult",
+          "subchannel": {
+            "bitrate": 112,
+            "cu": 112,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 2-A",
+            "sad": 584,
+            "subchid": 11
+          },
+          "transportmode": "audio"
+        },
+        {
+          "ascty": null,
+          "caflag": false,
+          "componentnr": 1,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "DlfkTXT         ",
+          "primary": false,
+          "scid": 1,
+          "shortlabel": "DlfkTXT",
+          "subchannel": {
+            "bitrate": 0,
+            "cu": 0,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 0,
+            "subchid": -1
+          },
+          "transportmode": "packetdata"
+        }
+      ],
+      "dls": {
+        "label": "Aus der jüdischen Welt",
+        "lastchange": 1577470824,
+        "time": 1577470819
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 0,
+        "time": 1577470819
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "Dlf Kultur      ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 112 kBit/s",
+      "mot": {
+        "lastchange": 1577470824,
+        "time": 1577470824
+      },
+      "pty": 7,
+      "ptystring": "Arts",
+      "samplerate": 48000,
+      "shortlabel": "Dlf Kult",
+      "sid": "0xd220",
+      "url_mp3": "/mp3/0xd220",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 10668,
+        "right": 10585,
+        "time": 1577470838
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "Dlf Nova        ",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "Dlf Nova",
+          "subchannel": {
+            "bitrate": 104,
+            "cu": 104,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 2-A",
+            "sad": 696,
+            "subchid": 12
+          },
+          "transportmode": "audio"
+        },
+        {
+          "ascty": null,
+          "caflag": false,
+          "componentnr": 1,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "DlfnTXT         ",
+          "primary": false,
+          "scid": 1,
+          "shortlabel": "DlfnTXT",
+          "subchannel": {
+            "bitrate": 0,
+            "cu": 0,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 0,
+            "subchid": -1
+          },
+          "transportmode": "packetdata"
+        }
+      ],
+      "dls": {
+        "label": "Update mit Sonja Meschkat",
+        "lastchange": 0,
+        "time": 1577470835
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 3,
+        "time": 1577470835
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "Dlf Nova        ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 104 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 2,
+      "ptystring": "Current Affairs",
+      "samplerate": 48000,
+      "shortlabel": "Dlf Nova",
+      "sid": "0xd230",
+      "url_mp3": "/mp3/0xd230",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": 7384,
+        "right": 7384,
+        "time": 1577470846
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": "DAB+",
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "DRadio DokDeb   ",
+          "primary": true,
+          "scid": null,
+          "shortlabel": "DDokDeb",
+          "subchannel": {
+            "bitrate": 48,
+            "cu": 36,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 800,
+            "subchid": 13
+          },
+          "transportmode": "audio"
+        },
+        {
+          "ascty": null,
+          "caflag": false,
+          "componentnr": 1,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "DDokDeb Text    ",
+          "primary": false,
+          "scid": 1,
+          "shortlabel": "DDokDebT",
+          "subchannel": {
+            "bitrate": 0,
+            "cu": 0,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 0,
+            "subchid": -1
+          },
+          "transportmode": "packetdata"
+        }
+      ],
+      "dls": {
+        "label": "Deutschlandradio Dokumente und Debatten",
+        "lastchange": 0,
+        "time": 1577470840
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 4,
+        "time": 1577470840
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "DRadio DokDeb   ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "HE-AAC, 48 kHz Stereo @ 48 kBit/s",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 3,
+      "ptystring": "Information",
+      "samplerate": 48000,
+      "shortlabel": "DDokDeb",
+      "sid": "0xd240",
+      "url_mp3": "/mp3/0xd240",
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": -1,
+        "right": -1,
+        "time": 0
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": null,
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": 36,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 0,
+            "cu": 0,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 0,
+            "subchid": -1
+          },
+          "transportmode": "packetdata"
+        }
+      ],
+      "dls": {
+        "label": "",
+        "lastchange": 0,
+        "time": 0
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 0,
+        "time": 0
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "EPG Deutschland ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 0,
+      "ptystring": "",
+      "samplerate": 0,
+      "shortlabel": "EPG",
+      "sid": "0xe0d110bc",
+      "url_mp3": null,
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": -1,
+        "right": -1,
+        "time": 0
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": null,
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": 35,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 16,
+            "cu": 12,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 456,
+            "subchid": 31
+          },
+          "transportmode": "packetdata"
+        }
+      ],
+      "dls": {
+        "label": "",
+        "lastchange": 0,
+        "time": 0
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 0,
+        "time": 0
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "TPEG            ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 0,
+      "ptystring": "",
+      "samplerate": 0,
+      "shortlabel": "TPEG",
+      "sid": "0xe0d010bc",
+      "url_mp3": null,
+      "xpaderror": {
+        "haserror": false
+      }
+    },
+    {
+      "audiolevel": {
+        "left": -1,
+        "right": -1,
+        "time": 0
+      },
+      "channels": 2,
+      "components": [
+        {
+          "ascty": null,
+          "caflag": false,
+          "componentnr": 0,
+          "dscty": null,
+          "fig2charset": "Undefined",
+          "fig2label": "",
+          "fig2rfu": false,
+          "label": "",
+          "primary": true,
+          "scid": 33,
+          "shortlabel": "",
+          "subchannel": {
+            "bitrate": 0,
+            "cu": 0,
+            "language": 0,
+            "languagestring": "",
+            "protection": "EEP 3-A",
+            "sad": 0,
+            "subchid": -1
+          },
+          "transportmode": "packetdata"
+        }
+      ],
+      "dls": {
+        "label": "",
+        "lastchange": 0,
+        "time": 0
+      },
+      "errorcounters": {
+        "aacerrors": 0,
+        "frameerrors": 0,
+        "rserrors": 0,
+        "time": 0
+      },
+      "fig2charset": "Undefined",
+      "fig2label": "",
+      "fig2rfu": false,
+      "label": "TPEG_MM         ",
+      "language": 0,
+      "languagestring": "",
+      "mode": "",
+      "mot": {
+        "lastchange": 0,
+        "time": 0
+      },
+      "pty": 0,
+      "ptystring": "",
+      "samplerate": 0,
+      "shortlabel": "TPEG_MM",
+      "sid": "0xe0d310bc",
+      "url_mp3": null,
+      "xpaderror": {
+        "haserror": false
+      }
+    }
+  ],
+  "tii": [
+    {
+      "comb": 2,
+      "delay": 137,
+      "delay_km": 20.068359375,
+      "error": 236.93333435058594,
+      "pattern": 4
+    },
+    {
+      "comb": 2,
+      "delay": 137,
+      "delay_km": 20.068359375,
+      "error": 237.6666717529297,
+      "pattern": 18
+    },
+    {
+      "comb": 2,
+      "delay": 137,
+      "delay_km": 20.068359375,
+      "error": 232.13333129882813,
+      "pattern": 21
+    },
+    {
+      "comb": 2,
+      "delay": 179,
+      "delay_km": 26.220703125,
+      "error": 194.0500030517578,
+      "pattern": 23
+    },
+    {
+      "comb": 2,
+      "delay": 198,
+      "delay_km": 29.00390625,
+      "error": 243.8000030517578,
+      "pattern": 24
+    }
+  ],
+  "utctime": {
+    "day": 27,
+    "hour": 18,
+    "lto": 1.0,
+    "minutes": 20,
+    "month": 12,
+    "year": 2019
+  }
+}

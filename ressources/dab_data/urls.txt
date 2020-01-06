@@ -1,0 +1,3 @@
+channels -> localhost:7979/mux.jon
+mp3 -> localhost:7979/mp3/53808
+cover -> localhost:7979/slide/53776

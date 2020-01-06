@@ -1,0 +1,24 @@
+ip = raspberrypi
+ip_1 = 127.0.0.1
+ip_2 = raspberrypi
+
+width = 640
+height = 400
+
+lighting_file = /sys/class/backlight/rpi_backlight/brightness
+lighting_min_value = 15
+lighting_step_value = 10
+
+wlan_file = /sys/class/net/wlan0/carrier
+wlan_interface = wlan0
+
+enable_owncloud = true
+owncloud_host /
+owncloud_dir = /home/pi/owncloud
+
+enable_gps = true
+gps_dir = /home/pi/gps_log/
+gps_upload_url = https://my.domain.xyz:12345
+gps_upload_keystore = ressources/keystore.p12
+gps_upload_keystore_pw = password1
+gps_upload_keystore_pw_2 = password2
