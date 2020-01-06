@@ -63,15 +63,15 @@ public class PlayerMain extends Application {
 
         Logger.getInstance().init();
 
-        Boolean isEnabled = Tools.loadFromPropertiesBoolean("enabled_owncloud");
+        Boolean isEnabled = Tools.loadFromPropertiesBoolean("enable_owncloud");
         if(isEnabled != null && isEnabled){
             cloud = new Owncloud(updateLocker);
         }
-        isEnabled = Tools.loadFromPropertiesBoolean("enabled_gps");
+        isEnabled = Tools.loadFromPropertiesBoolean("enable_gps");
         if(isEnabled != null && isEnabled){
             gpsUploader = new GpsUploader(updateLocker);
         }
-        isEnabled = Tools.loadFromPropertiesBoolean("enabled_radio");
+        isEnabled = Tools.loadFromPropertiesBoolean("enable_radio");
         if(isEnabled != null && isEnabled){
             radioChecker = new RadioChecker();
         }

@@ -22,3 +22,5 @@ gps_upload_url = https://my.domain.xyz:12345
 gps_upload_keystore = ressources/keystore.p12
 gps_upload_keystore_pw = password1
 gps_upload_keystore_pw_2 = password2
+
+enable_radio = true
