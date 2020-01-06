@@ -2,14 +2,14 @@
 Carpc wirtten in JavaFx, 
 
 ## Language
-Java open-jdk 11
+Java (open-jdk 8, openjfx)
 
 ## Features
-- Plays Musik via Mpd
-- Shows Navigation via Navit
-- Plays DAB+ Radio via Welle.io
+- Plays Musik via [Mpd](https://www.musicpd.org)
+- Shows Navigation via [Navit](https://www.navit-project.org)
+- Plays DAB+ Radio via [Welle.io](https://www.welle.io)
 - Uploads GPS Tracks via http(s)
-- Updates Musik via owncloudcmd
+- Updates Musik via [owncloudcmd](https://doc.owncloud.org/desktop/1.8/owncloudcmd.1.html)
 
 ## Dependencies
 - java-mpd
