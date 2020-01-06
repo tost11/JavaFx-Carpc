@@ -25,16 +25,19 @@ Java open-jdk 11
 ## How to use
 TODO
 
-#Feature Owncloud
+### Feature Owncloud
 
-#Feature Gps-Upload
+### Feature Gps-Upload
 
 ## Configuration
 There is a config file for dis/enableing Features and set up needet Folders and Files
 
-#Comandline Paramters
+### Comandline Paramters
+- update -> just updates what is possible (gps,owncloud,mpd) witout showing gui
+- debug -> sets log level to debug
+- config=file -> changes used config file
 
-#Config File Paramters
+### Config File Paramters
 - ip (string) -> Default mpd IP (hostname or ip)
 - ip_1 (string) -> Frist possible mpd ip for dropdown in settings
 - ip_2 (string)-> Second possible mpd ip for dropdown in settings
