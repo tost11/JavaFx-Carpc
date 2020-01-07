@@ -29,7 +29,15 @@ TODO
 
 ### Feature Owncloud
 
-### Feature Gps-Upload
+### Feature Gps-Logging/Upload
+
+### Feature Navit
+For navigation is the Software [Navit](https://www.navit-project.org) used.
+You cann install it via package manager or build it yourself.
+On my rp3, I needet to to build it manually for Raspian-Scretch for some reason (check scritps folder for that).
+Navit loads all important Information from navit.xml. You can check out mine [here](/setup_data/navit/nativ.xml).
+Most of it comes from [this Side](http://ozzmaker.com/navigating-navit-raspberry-pi)
+Its also a very good tutorial how to get navit running.
 
 ## Configuration
 There is a config file for dis/enableing Features and set up needet Folders and Files
