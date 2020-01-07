@@ -1,7 +1,7 @@
 # JavaFx-Carpc
 Carpc wirtten in JavaFx, 
 
-![GitHub Logo](/images/car_img_1.jpg)
+![Car Image](/images/car_img_1.jpg)
 
 ## Language
 Java (open-jdk 8, openjfx)
@@ -86,3 +86,13 @@ There is a config file for dis/enableing Features and set up needet Folders and 
 - gps_upload_keystore_pw (string) -> first password for keystore
 - gps_upload_keystore_pw_2 (string) -> second password for keystore
 - enable_radio (boolean) -> enables radio feature
+
+### Images
+
+![Image 0](/images/image_0.PNG)
+
+![Image 0](/images/image_1.PNG)
+
+![Image 0](/images/image_2.PNG)
+
+![Image 0](/images/image_3.PNG)
