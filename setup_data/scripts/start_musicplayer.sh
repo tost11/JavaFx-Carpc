@@ -3,7 +3,7 @@
 ret=-1
 while [ $ret != 0 ] ; do
     cd /home/pi/Java-Carpc/build
-    java --module-path $PATH_TO_FX --add-modules=javafx.controls -jar JavaFxMusicPlayerPi/build/Player.jar config=/home/pi/.carpc/config.properties
+    java --module-path $PATH_TO_FX --add-modules=javafx.controls -jar Java-Carpc/build/Player.jar config=/home/pi/.carpc/config.properties
     ret=$?
     cd ../../
     if [ $ret == 2 ]; then #start navit
