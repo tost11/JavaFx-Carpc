@@ -186,8 +186,8 @@ Waypoint</text></img>
 <osd type="button" x="-65" y="110" command="zoom_out()" src="Zoom_out.xpm"  />
 
 <!-- brightnes buttons -->
-<osd type="button" x="-65" y="180" command='spawn("bash","/home/pi/change_bright.sh","5")' src="Light_up.png" />
-<osd type="button" x="-65" y="240" command='spawn("bash","/home/pi/change_bright.sh","-5")' src="Light_down.png" />
+<osd type="button" x="-65" y="180" command='spawn("bash","/home/pi/.navit/change_bright.sh","5")' src="Light_up.png" />
+<osd type="button" x="-65" y="240" command='spawn("bash","/home/pi/.navit/change_bright.sh","-5")' src="Light_down.png" />
 
 <!--<osd type="button" x="-130" y="-170" command='spawn("bash","/home/pi/start_musicplayer.sh")' src="Speech_on.xpm" />-->
 

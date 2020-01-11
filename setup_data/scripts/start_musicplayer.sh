@@ -3,7 +3,7 @@
 ret=-1
 while [ $ret != 0 ] ; do
     cd /home/pi/Java-Carpc/build
-    java -jar Player.jar
+    java --module-path $PATH_TO_FX --add-modules=javafx.controls -jar JavaFxMusicPlayerPi/build/Player.jar config=/home/pi/.carpc/config.properties
     ret=$?
     cd ../../
     if [ $ret == 2 ]; then #start navit
@@ -14,7 +14,7 @@ while [ $ret != 0 ] ; do
 	    git reset --hard HEAD
 	    git pull
 	    if [ $? == 0 ]; then
-	        ./pack.sh #bzw. pack_pi4.sh
+	        ./pack_pi4.sh #bzw. pack_pi4.sh
 	    fi
         cd ..
     fi

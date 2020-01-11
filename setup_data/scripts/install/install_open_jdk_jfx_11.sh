@@ -1,6 +1,6 @@
 sudo apt-get update
 
-sudo apt-get install openjdk-11-jdk openjfx
+sudo apt-get install -y openjdk-11-jdk openjfx
 
 git clone https://github.com/tost11/JavaFx-Carpc.git
 cd JavaFx-Carpc/
@@ -8,8 +8,11 @@ cd JavaFx-Carpc/
 #make build skript executable
 chmod u+x pack_pi4.sh
 
+mkdir ~/.carpc
+mkdir ~/.carpc/covers
+
 #export your javafx installation path and copy also to bashr.rc or profile.rc for percistance
-PATH_TO_FX=/usr/share/openjfx/lib
+export PATH_TO_FX=/usr/share/openjfx/lib
 
 ./pack_pi4.sh
 
