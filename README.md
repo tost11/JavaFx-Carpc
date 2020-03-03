@@ -30,10 +30,8 @@ TODO
 ## Setup
 
 ### JavaFx-Carpc
-
 Clone and repository and build project
 replace or define $PATH_TO_FX with your installation path of javafx
-
 ```bash
 git clone https://github.com/tost11/JavaFx-Carpc.git
 cd JavaFx-Carpc/
@@ -45,7 +43,6 @@ echo "Main-Class: de.tostsoft.carpc.PlayerMain" > manifest.txt
 echo "Class-Path: ." >> manifest.txt
 jar -cvfm Player.jar manifest.txt
 ```
-
 After that switch int to build folder and Start the Application.
 Whenn connected via ssh you need to export display via 'export DISPLAY=:0'
 
@@ -66,7 +63,6 @@ For that have a look at the Scripts in the [setup_data/scripts/raspian_stretch] 
 
 ### Feature Owncloud
 With this feature you cann download music data from a your own server. There fore you have to define the url and the destination folder in the config file as discribed beneth. Also you have to install the [owncloud-cmd](https://doc.owncloud.com/desktop/advanced_usage/command_line_client.html) and define user and password in a .netrc described [here](https://man.cx/netrc(4)). Also you have to define an empty exlude list file.
-
 ```bash
 sudo apt-get install -y owncloud-client-cmd
 sudo mkdir /etc/owncloud-client
@@ -84,6 +80,20 @@ Most of it comes from [this side](http://ozzmaker.com/navigating-navit-raspberry
 Its also a very good tutorial how to get navit running.
 
 ### Feature DAB+ via Welli-IO
+For using the DAB+ Feature you have to compile welle-io yourself and add start script to boot process. Also you have to enable feature via config paramters.
+```bash
+sudo apt-get install -y cmake libmp3lame-dev libmpg123-dev libfftw3-dev libfaad-dev librtlsdr-dev
+git clone https://github.com/AlbrechtL/welle.io.git
+cd welle.io/
+mkdir build
+cd build
+cmake .. -DRTLSDR=1 -DBUILD_WELLE_IO=OFF -DBUILD_WELLE_CLI=ON
+make -j4
+sudo make install
+#copy 'welle-cli -c 5C -C 1 -w 7979 &' to rc.local
+#enable in carpc config.properties 'enable_radio=true'
+```
+Depending on your country you have to replace the -c paramter '5C' with the one for your location
 
 ## Configuration
 There is a config file for dis/enableing Features and set up needet Folders and Files
