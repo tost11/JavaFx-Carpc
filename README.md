@@ -93,6 +93,18 @@ Navit loads all important information from navit.xml. You can check out mine [he
 Most of it comes from [this side](http://ozzmaker.com/navigating-navit-raspberry-pi)
 Its also a very good tutorial how to get navit running.
 
+When using my navit.xml you cann install it via:
+```bash 
+sudo apt-get -y install navit mpc
+cp JavaFx-Carpc/setup_data/navit/navit.xml ~/.navit/
+cp JavaFx-Carpc/setup_data/scripts/change_bright.sh ~/.navit/
+chmod u+x ~/.navit/change_bright.sh
+sudo cp JavaFx-Carpc/setup_data/navit/icons/* /usr/share/navit/icons/
+sudo mkdir /usr/share/navit/maps/
+sudo wget -O /usr/share/navit/maps/map.bin http://maps9.navit-project.org/api/map/?bbox=-17.6,34.5,42.9,70.9
+```
+This will create local .navit folder in your houme directory where all data ist stored. Also it installs mpc for the mpd controll buttons in navit UI. And it will download a map containg Westeurope.
+
 ### Feature DAB+ via Welli-IO
 For using the DAB+ Feature you have to compile welle-io yourself and add start script to boot process. Also you have to enable feature via config paramters.
 ```bash
