@@ -61,6 +61,20 @@ Do you realy need the album covers? if not install last version from packet mana
 If not you have to compile mpd yourself and that means you need an newer version of: gcc, cmake, boost, pyhton, meson, ninja.
 For that have a look at the Scripts in the [setup_data/scripts/raspian_stretch] folder. That will keep your pi busy for a howl day. For faster compiling you cann disable pyhton tests. Also you have to increase the virtual RAM of the rpy for compiling gcc. I changed it one 1GB and it worked fine.
 
+#### Configuration
+For starting mpd with the pi user you have to crate an .mpd folder in /home/pi and copy the default config file from /etc/mpd.conf. After that you change or may not change these Paramters.
+
+- music_directory         "home/pi/owncloud"
+- playlist_directory      "/home/pi/owncloud/Playlists-Musikbot"
+- user                    "pi"
+- bind_to_address         "0.0.0.0"
+- db_file                 "/home/pi/mpd/tag_cache"
+- log_file                "/home/pi/.mpd/mpd.log"
+- pid_file                "/home/pi/.mpd/pid"
+- state_file              "/home/pi/.mpd/state"
+
+Also i prefer changing audio output to pulse instead of alsa
+
 ### Feature Owncloud
 With this feature you cann download music data from a your own server. There fore you have to define the url and the destination folder in the config file as discribed beneth. Also you have to install the [owncloud-cmd](https://doc.owncloud.com/desktop/advanced_usage/command_line_client.html) and define user and password in a .netrc described [here](https://man.cx/netrc(4)). Also you have to define an empty exlude list file.
 ```bash
