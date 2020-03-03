@@ -44,6 +44,9 @@ echo "Class-Path: ." >> manifest.txt
 jar -cvfm Player.jar manifest.txt
 ```
 After that switch int to build folder and Start the Application.
+```bash
+java -jar --module-path $PATH_TO_FX --add-modules javafx.controls build/Player.jar
+```
 Whenn connected via ssh you need to export display via 'export DISPLAY=:0'
 
 ### MPD
@@ -120,6 +123,8 @@ sudo make install
 #enable in carpc config.properties 'enable_radio=true'
 ```
 Depending on your country you have to replace the -c paramter '5C' with the one for your location
+
+### Autostart via X-Server
 
 ## Configuration
 There is a config file for dis/enableing Features and set up needet Folders and Files
