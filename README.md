@@ -29,6 +29,26 @@ TODO
 
 ## Setup
 
+### JarPc
+
+Clone and repository and build project
+replace or define $PATH_TO_FX with your installation path of javafx
+
+```bash
+git clone https://github.com/tost11/JavaFx-Carpc.git
+cd JavaFx-Carpc/
+git submodule update --init --recursive
+mkdir build
+javac --module-path $PATH_TO_FX --add-modules javafx.controls -d build -sourcepath 'src/main/java/:json-simple/src/main/java/:java-mpd/src/main/java/' src/main/java/de/tostsoft/carpc/PlayerMain.java
+cd build
+echo "Main-Class: de.tostsoft.carpc.PlayerMain" > manifest.txt
+echo "Class-Path: ." >> manifest.txt
+jar -cvfm Player.jar manifest.txt
+```
+
+After that switch int to build folder and Start the Application.
+Whenn connected via ssh you need to export display via 'export DISPLAY=:0'
+
 ### MPD
 MPD is a musik Player that can be controllerd by a text interface over Network. So it is possible to control the musik played on your Car-Radio by Handy, PC, or whatever device you are using.
 The recomended MPD version is 0.21.*. On previous versions download of album covers via text interface will not work and it will not be shown in the Player.
