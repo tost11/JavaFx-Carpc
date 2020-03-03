@@ -29,7 +29,7 @@ TODO
 
 ## Setup
 
-### JarPc
+### JavaFx-Carpc
 
 Clone and repository and build project
 replace or define $PATH_TO_FX with your installation path of javafx
@@ -65,6 +65,13 @@ If not you have to compile mpd yourself and that means you need an newer version
 For that have a look at the Scripts in the [setup_data/scripts/raspian_stretch] folder. That will keep your pi busy for a howl day. For faster compiling you cann disable pyhton tests. Also you have to increase the virtual RAM of the rpy for compiling gcc. I changed it one 1GB and it worked fine.
 
 ### Feature Owncloud
+With this feature you cann download music data from a your own server. There fore you have to define the url and the destination folder in the config file as discribed beneth. Also you have to install the [owncloud-cmd](https://doc.owncloud.com/desktop/advanced_usage/command_line_client.html) and define user and password in a .netrc described [here](https://man.cx/netrc(4)). Also you have to define an empty exlude list file.
+
+```bash
+sudo apt-get install -y owncloud-client-cmd
+sudo mkdir /etc/owncloud-client
+sudo touch /etc/owncloud-client/sync-exclude.lst
+```
 
 ### Feature Gps-Logging/Upload
 
@@ -75,6 +82,8 @@ On my rpy3, I needet to to build it manually for Raspian Stretch for some reason
 Navit loads all important information from navit.xml. You can check out mine [here](/setup_data/navit/nativ.xml).
 Most of it comes from [this side](http://ozzmaker.com/navigating-navit-raspberry-pi)
 Its also a very good tutorial how to get navit running.
+
+### Feature DAB+ via Welli-IO
 
 ## Configuration
 There is a config file for dis/enableing Features and set up needet Folders and Files
