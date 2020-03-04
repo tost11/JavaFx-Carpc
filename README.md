@@ -96,6 +96,8 @@ Navit loads all important information from navit.xml. You can check out mine [he
 Most of it comes from [this side](http://ozzmaker.com/navigating-navit-raspberry-pi)
 Its also a very good tutorial how to get navit running.
 
+If navit sometimes freezes for no reason you have to increase the gpu RAM fo the Raspberry-Pi. Therefor open /boot/config.txt and change gpu_mem e.g. gpu_mem=128.
+
 When using my navit.xml you cann install it via:
 ```bash 
 sudo apt-get -y install navit mpc
