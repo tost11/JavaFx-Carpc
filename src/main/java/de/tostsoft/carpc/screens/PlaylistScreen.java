@@ -9,7 +9,10 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 
+import java.text.SimpleDateFormat;
 import java.util.Collection;
+import java.util.Date;
+
 
 /**
  * Created by tost-holz on 14.09.2018.
@@ -19,6 +22,7 @@ public class PlaylistScreen extends BasicDataScreen {
 
     private Button buttonPlay;
     private Button buttonRemove;
+    private Button buttonSavePlaylist;
 
     private MpdClient mpdClient;
 
@@ -68,6 +72,19 @@ public class PlaylistScreen extends BasicDataScreen {
         vBox.getChildren().addAll(buttonPlay, buttonRemove);
 
         vBox.getChildren().add(controlButtonBox);
+
+        buttonSavePlaylist = new Button("Speichern");
+        buttonSavePlaylist.setFont(font);
+        buttonSavePlaylist.setPrefWidth(w);
+        buttonSavePlaylist.setPrefHeight(h);
+        buttonSavePlaylist.setOnAction((ev)->{
+            String pattern = "dd-MM-yyyy:mm-HH";
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+            mpdClient.querry("save "+(simpleDateFormat.format(new Date())));
+        });
+
+        vBox.getChildren().add(buttonSavePlaylist);
+
 
         Button but = new Button("Zurück");
         but.setFont(new Font(25));

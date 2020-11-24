@@ -316,14 +316,14 @@ public class MusikdataScreen extends BasicDataScreen{
             isDirectorys.clear();
             for(String it:res){
                 if(it.startsWith("directory:")) {
-                    String name = it.split(":")[1].trim();
+                    String name = it.split(":",2)[1].trim();
                     if(name.contains("/")){
                         name = name.substring(name.lastIndexOf('/')+1,name.length());
                     }
                     isDirectorys.add(name);
                     dirs.add(name);
                 }else if(it.startsWith("file:")){
-                    String name = it.split(":")[1].trim();
+                    String name = it.split(":",2)[1].trim();
                     if(name.contains("/")){
                         name = name.substring(name.lastIndexOf('/')+1,name.length());
                     }

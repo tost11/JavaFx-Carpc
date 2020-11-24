@@ -362,16 +362,7 @@ public class PlayerScreen extends BasicScreen<BorderPane> {
             return;
         }
         mpdClient.querry("clear");
-        for(String file:mpdClient.getDatabase().getFiles()){
-            if(file.toLowerCase().contains("playlist")){
-                continue;//not add songs in playlist double
-            }
-            if(mpdClient.getDatabase().isDirectory(file)){
-                mpdClient.querry("searchadd \"(base '" + MpdClient.excapeQuerryString(file,true) + "')\"");
-            }else{
-                mpdClient.querry("searchadd \"(file == '" + MpdClient.excapeQuerryString(file) + "')\"");
-            }
-        }
+        mpdClient.querry("searchadd \"(file contains '')\"");
         mpdClient.querry("play");
     }
 
