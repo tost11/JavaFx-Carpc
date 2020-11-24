@@ -114,6 +114,7 @@ public class PlayerMain extends Application {
             radioChecker.startChecking();
         }
 
+        wLan.init();
         wLan.startUpdate();
 
         if(gpsUploader != null) {
@@ -171,6 +172,8 @@ public class PlayerMain extends Application {
 
     public static void main(String[] args) {
         boolean onlyUpdate = false;
+        boolean enableWlan = false;
+        System.out.println("parsing commandline arguments: "+Arrays.asList(args).toString());
         for (String param : args) {
             if (param.equals("update")) {
                 onlyUpdate = true;
@@ -184,12 +187,35 @@ public class PlayerMain extends Application {
                     Tools.configFileName = arr[1];
                 }
             }
+            if(param.equals("wlan")){
+                enableWlan = true;
+            }
         }
         if(onlyUpdate){
+            int exitCode = 0;
+            WLan wLan = new WLan();
+            boolean enabledWlan = false;
             UpdateLocker updateLocker = new UpdateLocker();
             try {
                 boolean chagnes = false;
                 Logger.getInstance().log(Logger.Logtype.INFO,"Start checking for new Owncloud Data");
+
+                if(enableWlan) {
+                    Logger.getInstance().log(Logger.Logtype.INFO,"Try to enable wlan");
+                    wLan.checkStatus();
+                    if (wLan.getStatus() == WLan.ConnectionStatus.DISABLD) {
+                        wLan.enable();
+                        enabledWlan = true;
+                    }
+                    int count = 0;
+                    while (wLan.getStatus() == WLan.ConnectionStatus.NOT_CONNECTED && count < 100) {
+                        Thread.sleep(1000);//wait for 10 seconds
+                        count++;
+                    }
+                }
+
+                Logger.getInstance().log(Logger.Logtype.INFO,"Wlan status: "+wLan.getStatus());
+
                 Owncloud owncloud = new Owncloud(updateLocker);
                 long size = owncloud.getSizeCloud();
                 owncloud.startUpdate();
@@ -214,13 +240,16 @@ public class PlayerMain extends Application {
                     Logger.getInstance().log(Logger.Logtype.INFO,"No new Routes have been Uploadet");
                 }
                 if(chagnes){
-                    System.exit(1);
+                    exitCode = 1;
                 }
             }catch (Exception ex){
                 Logger.getInstance().log(Logger.Logtype.FATAL_ERROR,"Error by Updating on commandline: "+ex.getMessage());
-                System.exit(-1);
+                exitCode = -1;
             }
-            System.exit(0);
+            if(enabledWlan) {
+                wLan.disable();
+            }
+            System.exit(exitCode);
         }
         launch(args);
     }

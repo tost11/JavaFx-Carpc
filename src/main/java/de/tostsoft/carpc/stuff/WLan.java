@@ -43,6 +43,19 @@ public class WLan {
     private String statusFile ="/sys/class/net/wlan0/carrier";
     private String wLanInterfaceName ="wlan0";
 
+    public void init(){
+        checkStatus();
+        Boolean enabled = Tools.loadFromPropertiesBoolean("wlan_status");
+        if(enabled != null){
+            Logger.getInstance().log(Logger.Logtype.INFO,"Set wlan on start: "+(enabled?"Enabled":"Disabled"));
+            if(enabled){
+                enable();
+            }else{
+                disable();
+            }
+        }
+    }
+
     public WLan(){
         String value = Tools.loadFromProperties("wlan_file");
         if(value != null){
@@ -78,23 +91,30 @@ public class WLan {
         thread.start();
     }
 
-    private void checkStatus(){
+    private Character checkFile(){
         try {
             FileReader stream = new FileReader(new File(statusFile));
             char c[] = new char[1];
-            c[0]='0';
-            stream.read(c,0,1);
+            c[0] = '0';
+            stream.read(c, 0, 1);
             stream.close();
-            if(c[0]=='1'){
-                updateStatus(ConnectionStatus.CONNECTED);
-                //TODO check connect wlan name
-            }else if(c[0] == '0'){
-                updateStatus(ConnectionStatus.NOT_CONNECTED);
-            }else{
-                updateStatus(ConnectionStatus.UNKNOWN);
-            }
+            return c[0];
         }catch (IOException ex){
+            return null;
+        }
+    }
+
+    public void checkStatus(){
+        Character c = checkFile();
+        if(c == null){
             updateStatus(ConnectionStatus.DISABLD);
+        }else if(c=='1'){
+            updateStatus(ConnectionStatus.CONNECTED);
+            //TODO check connect wlan name
+        }else if(c == '0'){
+            updateStatus(ConnectionStatus.NOT_CONNECTED);
+        }else{
+            updateStatus(ConnectionStatus.UNKNOWN);
         }
     }
 
@@ -107,6 +127,7 @@ public class WLan {
             Platform.runLater(()->listener.handleNewStatus(status));
         }
     }
+
 
     public void stop(){
         if(thread == null){

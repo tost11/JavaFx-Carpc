@@ -33,12 +33,16 @@ public class GpsUploader {
 
     private Boolean delteGpsLoggs = true;
 
+    private String uploadUserId = null;
 
     public GpsUploader(UpdateLocker updateLocker){
         this.updateLocker = updateLocker;
         HttpsURLConnection.setDefaultHostnameVerifier ((hostname, session) -> true);
 
         gpsLogdir = Tools.loadFromProperties("gps_dir");
+        if(gpsLogdir != null && gpsLogdir.length() > 0 && !gpsLogdir.endsWith("/")){
+            gpsLogdir+="/";
+        }
         uploadUrl = Tools.loadFromProperties("gps_upload_url");
         keqstorePW = Tools.loadFromProperties("gps_upload_keystore_pw");
         keystorePW2 = Tools.loadFromProperties("gps_upload_keystore_pw_2");
@@ -62,6 +66,14 @@ public class GpsUploader {
         stringBuilder.append(finished);
         stringBuilder.append(",\n  \"counter\":");
         stringBuilder.append(key);
+        stringBuilder.append(",\n  \"user\":");
+        if(uploadUserId!=null) {
+            stringBuilder.append("\"");
+            stringBuilder.append(uploadUserId);
+            stringBuilder.append("\"");
+        }else{
+            stringBuilder.append("null");
+        }
         stringBuilder.append("\n}");
 
         try {
@@ -75,7 +87,7 @@ public class GpsUploader {
 
             URL url = new URL(uploadUrl);
             HttpsURLConnection connection = (HttpsURLConnection)url.openConnection();
-            connection.setRequestMethod("PUT");
+            connection.setRequestMethod("POST");
             connection.setDoOutput(true);
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setSSLSocketFactory(sc.getSocketFactory());
