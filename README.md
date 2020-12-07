@@ -141,6 +141,23 @@ Depending on your country you have to replace the -c paramter '5C' with the one 
 
 ### Autostart via X-Server
 
+### Start
+For starting of the raspberrypi i wired a switch to the start GPIO pins of the pi. So it gets started when i connect those.
+
+### Shutdown
+To shutdown the raspberrypi [this]() skript cann be used. It checks two GPIO pins. The first one is the same used on start, the other one is a pin enabled by a jumper. So only if the jumper pin is set to on and the swritch is turned of the raspberrypi is shut down.
+
+The second pin with the jumper is for debugging purpose, because a system shutting down if the power switch is not connected is quit annoying.
+
+Also the shutdown script enables the wlan befor shuting down and runns the java application with cmd flag, so the owncloud and gps data could be updated.
+The purpose for that is, performing an updating when parking your car before your home and automaticly doing an update.
+
+To use the sctript add ist to the */etc/initrc* or to cron root user entries. Root rights are required because shutdown needts that.
+
+### Old XServer rapian-jessy setup
+You don't what to use that
+//TODO find out how i have done that
+
 ## Configuration
 There is a config file for dis/enableing Features and set up needet Folders and Files
 
