@@ -87,6 +87,19 @@ sudo touch /etc/owncloud-client/sync-exclude.lst
 ```
 
 ### Feature Gps-Logging/Upload
+To use gpsd and Log all informatin to json files the libraries *gpsd* and *gpsd-clients* are needet so install them
+```bash
+sudo apt-get install -y gpsd gpsd-clients
+```
+With *gpsd-clients* comes a comandline tool named: *gpspipe* that will log all outcoming trafic from gpsd to a specified json file.
+For use of that i crated a script that stores these output in a specified folder with the current time. Have a look [here]().
+At least make that script executable and add it to your crontab entry to start on boot
+```bash
+@reboot /bin/bash PATH_TO_SCRIPT PATH_TO_LOG_FOLDER
+```
+
+Set the config variable *gps_dir* int the application configuration to match the same folder
+
 
 ### Feature Navit
 For navigation is the Software [Navit](https://www.navit-project.org) used.
